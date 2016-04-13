@@ -1,0 +1,50 @@
+body {
+   background-color: rgba(92,	119,	130, 1);
+ }
+
+div {
+  width: 10em;
+  height: 10em;
+  float: left;
+  position: relative;
+  color: white;
+}
+
+article {
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5em;
+}
+
+div p {
+  font-weight: lighter;
+  font-size: 8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.h {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.rows:before,
+.rows:after {
+  content:"";
+  display:table;
+}
+.rows:after {
+  clear:both;
+}
+.rows {
+  zoom:1;
+  overflow: hidden;
+}
